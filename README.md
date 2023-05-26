@@ -15,7 +15,8 @@ GENERALIDADES DEL PIPELINE.
 
 Dentro de las conclusiones a priori que se puede obtener del desarrollo del presente proyecto está el hecho de que el orden afecta el resultado. Con esto en mente establecemos para este caso de uso particular la siguiente cronología como la más efectiva para la obtención del resultado esperado.
 
-<img width="377" alt="pipeline" src="https://github.com/IaManBel/pim/assets/124216691/11e6e3ce-d195-4369-ac91-4ca288f1b9fe">
+<img width="284" alt="pipeline" src="https://github.com/IaManBel/pim/assets/124216691/aa955d5b-6f92-44eb-b8f0-11da5e2c66c4">
+
 
 
 
