@@ -15,13 +15,8 @@ GENERALIDADES DEL PIPELINE.
 
 Dentro de las conclusiones a priori que se puede obtener del desarrollo del presente proyecto está el hecho de que el orden afecta el resultado. Con esto en mente establecemos para este caso de uso particular la siguiente cronología como la más efectiva para la obtención del resultado esperado.
 
+<img width="377" alt="pipeline" src="https://github.com/IaManBel/pim/assets/124216691/11e6e3ce-d195-4369-ac91-4ca288f1b9fe">
 
-#Pipeline Step	Filtro	Param	Value
-#1	Grayscale	n/a	n/a
-#2	Median	R	1
-#3	Gausian	n/a	n/a
-#4	Mean	R	2
-#5	Ccurv	Iterations	1
-		Time	2
-#6	KernelMax	3 x 3	
+
+
 
