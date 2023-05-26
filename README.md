@@ -16,12 +16,12 @@ GENERALIDADES DEL PIPELINE.
 Dentro de las conclusiones a priori que se puede obtener del desarrollo del presente proyecto está el hecho de que el orden afecta el resultado. Con esto en mente establecemos para este caso de uso particular la siguiente cronología como la más efectiva para la obtención del resultado esperado.
 
 
-Pipeline Step	Filtro	Param	Value
-1	Grayscale	n/a	n/a
-2	Median	R	1
-3	Gausian	n/a	n/a
-4	Mean	R	2
-5	Ccurv	Iterations	1
+#Pipeline Step	Filtro	Param	Value
+#1	Grayscale	n/a	n/a
+#2	Median	R	1
+#3	Gausian	n/a	n/a
+#4	Mean	R	2
+#5	Ccurv	Iterations	1
 		Time	2
-6	KernelMax	3 x 3	
+#6	KernelMax	3 x 3	
 
