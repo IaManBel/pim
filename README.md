@@ -19,7 +19,7 @@ Dentro de las conclusiones a priori que se puede obtener del desarrollo del pres
 
 # Ejecución 
 
-Los programas utilizados para el desarrollo del proyecto se encuentran en este repositorio en el directorio /Code_python
+Los programas utilizados para el desarrollo del proyecto se encuentran en este repositorio en el directorio https://github.com/IaManBel/pim#:~:text=27%20minutes%20ago-,Code_python,-Add%20files%20via [Code_python]
 la sintaxis de ejecución y el orden especifico es el siguiente.
 
 #### python3  grayscale.py TRAIN01.jpg gTRAIN01.jpg 
