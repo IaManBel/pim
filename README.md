@@ -45,8 +45,10 @@ Los programas utilizados para el desarrollo del proyecto se encuentran en este r
 #### python3  KrnelMax.py Ccur12mean2Gausmedi1gTRAIN01.jpg KrneCcur12mean2Gausmedi1gTRAIN01.jpg   
 
 # Resultados
-Los resultados obtenidos en cada uno de los 30 casos se encuentran en el directorio [6-Kernel](https://github.com/IaManBel/pim/tree/main/6-Kernel)
+Los resultados obtenidos en cada uno de los 30 casos se encuentran en el directorio [6-Kernel](https://github.com/IaManBel/pim/tree/main/6-Kernel), los cuales se observan como esta imagen:
 ![KrnCcur12mean2Gausmedi1gTRAIN01](https://github.com/IaManBel/pim/assets/124216691/1a1f823f-cb90-4b1c-9432-82c2112c7770)
+
+
 
 
 
