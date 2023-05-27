@@ -13,9 +13,18 @@ Otro desafío importante fue establecer parámetros que se adapten al conjunto d
 
 # Generalidades del pipeline.
 
-Dentro de las conclusiones a priori que se puede obtener del desarrollo del presente proyecto está el hecho de que el orden afecta el resultado. Con esto en mente establecemos para este caso de uso particular la siguiente cronología como la más efectiva para la obtención del resultado esperado.
+Dentro de las conclusiones a priori que se puede obtener del desarrollo del presente proyecto está el hecho de que el orden afecta el resultado. Con esto en mente establecemos para este caso de uso particular, la siguiente cronología como la más efectiva para la obtención del resultado esperado.
 
 <img width="284" alt="pipeline" src="https://github.com/IaManBel/pim/assets/124216691/aa955d5b-6f92-44eb-b8f0-11da5e2c66c4">
+
+# Detalle y justificación
+
+1.	Dadas las características ya expuestas de las imágenes, en primer lugar, convertimos las imágenes a escala de grises, en búsqueda de simplicidad y reducción de esfuerzo de cómputo, así como una reducción en la dimensionalidad, para el tratamiento de estas.
+
+2.	Dentro del pipeline el siguiente ajuste está enfocado a la reducción del ruido, por medio de la aplicación de un    filtro de mediana, eliminando los outliers (pixeles que exceden por mucho el valor de la media, para este filtro se utilizó el parámetro r=1![image](https://github.com/IaManBel/pim/assets/124216691/9a378d51-0a99-4c4e-8607-21a292afe517)
+
+
+![image](https://github.com/IaManBel/pim/assets/124216691/a2dd9395-3ece-4ee4-8c11-d04dd921b3a9)
 
 # Ejecución 
 
