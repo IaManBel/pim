@@ -1,5 +1,6 @@
 # pim
-Repositorio proyecto final PIM Univerisdad Javeriana 2023-10
+# Repositorio proyecto final PIM Univerisdad Javeriana 2023-10
+### Manuel Beltran - Jesus Súarez
 
 # Análisis de Imágenes Médicas - Segmentación de Características en Imágenes de Fondo de Ojo
 
