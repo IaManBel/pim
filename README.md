@@ -19,8 +19,7 @@ Dentro de las conclusiones a priori que se puede obtener del desarrollo del pres
 
 # Ejecución 
 
-Los programas utilizados para el desarrollo del proyecto se encuentran en este repositorio en el directorio https://github.com/IaManBel/pim#:~:text=27%20minutes%20ago-,Code_python,-Add%20files%20via [Code_python]
-la sintaxis de ejecución y el orden especifico es el siguiente.
+Los programas utilizados para el desarrollo del proyecto se encuentran en este repositorio en el directorio [Code_python](https://github.com/IaManBel/pim/tree/main/Code_python),la sintaxis de ejecución y el orden especifico es el siguiente.
 
 #### python3  grayscale.py TRAIN01.jpg gTRAIN01.jpg 
 #### python3  median.py gTRAIN01.jpg medi1gTRAIN01.jpg 1  
@@ -30,6 +29,7 @@ la sintaxis de ejecución y el orden especifico es el siguiente.
 #### python3  KrnelMax.py Ccur12mean2Gausmedi1gTRAIN01.jpg KrneCcur12mean2Gausmedi1gTRAIN01.jpg   
 
 # Resultados
+Los resultados obtenidos en cada uno de los 30 casos se encuentran en el directorio [Code_python]
 ![KrnCcur12mean2Gausmedi1gTRAIN01](https://github.com/IaManBel/pim/assets/124216691/1a1f823f-cb90-4b1c-9432-82c2112c7770)
 
 
