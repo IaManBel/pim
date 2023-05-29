@@ -35,12 +35,12 @@ Dentro de las conclusiones a priori que se puede obtener del desarrollo del pres
 # Descripción de los directorios.
 Los directorios se encuentran enumerados, este digito corresponde a la etapa a la que pertence cada grupo de imágenes, 
 a continuación una breve descripción del contenido:
-### 0-Origem, el repositorio de las imagenes fuente del procesos.
+### 0-Origen, el repositorio contiene  las imagenes fuente del proceso, es decir las que son tomadas como base y proporcionadas por el reto kaggle.
 ### 1-GrayScale, contiene las imagenes posterior a la aplicación de filtro grayscale.
 ### 2-Median, este directorio y los subsiguientes, contienen las imagenes resultantes de aplicar el filtro correspondiente.
 ### 6-Kernel, Este dorectorio contiene las imagene resultantes de alicar el pipeline, es decir el resultado final.
 
-Nota es de particular interes aclarar que este es un proceso secuencial en el que cada fase del pipeline, proporciona la imagen de entrada para el siguiente paso.
+Nota es de particular interes aclarar que este es un proceso secuencial, en el que cada fase del pipeline, proporciona la imagen de entrada para el siguiente paso.
 
 # Ejecución 
 
