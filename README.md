@@ -18,7 +18,7 @@ Dentro de las conclusiones a priori que se puede obtener del desarrollo del pres
 
 <img width="284" alt="pipeline" src="https://github.com/IaManBel/pim/assets/124216691/aa955d5b-6f92-44eb-b8f0-11da5e2c66c4">
 
-# Detalle y justificación
+# Detalle, justificación del paso a paso empleado en el pipeline.
 
 1.	Dadas las características ya expuestas de las imágenes, en primer lugar, convertimos las imágenes a escala de grises, en búsqueda de simplicidad y reducción de esfuerzo de cómputo, así como una reducción en la dimensionalidad, para el tratamiento de estas.
 
