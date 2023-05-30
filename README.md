@@ -35,10 +35,19 @@ Dentro de las conclusiones a priori que se puede obtener del desarrollo del pres
 # Descripción de los directorios.
 Los directorios se encuentran enumerados, este digito corresponde a la etapa, de  la que hace parte cada grupo de imágenes, a continuación una breve descripción del contenido:
 #### [0-Origen](https://github.com/IaManBel/pim/tree/main/0-origen), el repositorio contiene  las imagenes fuente del proceso, es decir las que son tomadas como base y proporcionadas por el reto kaggle.
+
 #### [1-GrayScale](https://github.com/IaManBel/pim/tree/main/1-GrayScale), contiene las imagenes posterior a la aplicación de filtro grayscale, sobre las imágenes del directorio 0.
-#### [2-Median](https://github.com/IaManBel/pim/tree/main/2-Median), este directorio contienen las imágenes resultantes de aplicar el filtro correspondiente Median.py con parámetro r=1 , a cada una de las imágenes del paso inmediatamente interior.
-#### [3-Gausian](https://github.com/IaManBel/pim/tree/main/3-Median), este directorio y los subsiguientes, contienen las imágenes resultantes de aplicar el filtro correspondiente, a cada una de las imágenes del paso inmediatamente interior.
-#### [4-Mean](https://github.com/IaManBel/pim/tree/main/4-Mean), este directorio y los subsiguientes, contienen las imágenes resultantes de aplicar el filtro correspondiente, a cada una de las imágenes del paso inmediatamente interior.
+
+#### [2-Median](https://github.com/IaManBel/pim/tree/main/2-Median), este directorio contienen las imágenes resultantes de aplicar el filtro correspondiente Median.py con parámetro r=1 , a cada una de las imágenes obtenidasdel paso inmediatamente anterior.
+
+#### [3-Gausian](https://github.com/IaManBel/pim/tree/main/3-Median), este directorio contienen las imágenes resultantes de aplicar el filtro correspondiente Gaus2.py, a cada una de las imágenes obtenidas del paso inmediatamente interior.
+
+#### [4-Mean](https://github.com/IaManBel/pim/tree/main/4-Mean), este directorio y los subsiguientes, contienen las imágenes resultantes de aplicar el filtro Mean.py con un valor de r=2 a cada una de las imágenes obtenidas del paso inmediatamente interior.
+
+#### [5-Ccurv](https://github.com/IaManBel/pim/tree/main/5-Ccurv), este directorio  contiene las imágenes resultantes de aplicar el filtro Ccurv.py, con los parametros itraciones=1, time=2, a cada una de las imágenes obtenidas del paso inmediatamente interior.
+
+#### [6-Kernel](https://github.com/IaManBel/pim/tree/main/6-Kernel), este directorio, contiene las imágenes resultantes de aplicar el filtro KrnelMax.py, a cada una de las imágenes obtenidas del paso inmediatamente interior. Estas imagenes son las resultantes del pipeline propuesto.
+
 ![image](https://github.com/IaManBel/pim/assets/124216691/c619f9aa-16ed-468d-a629-04406bc9ae53)
 
 
