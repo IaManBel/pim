@@ -47,14 +47,14 @@ Nota es de particular interes aclarar que este es un proceso secuencial, en el q
 
 Los programas utilizados para el desarrollo del proyecto se encuentran en este repositorio en el directorio [Code_python](https://github.com/IaManBel/pim/tree/main/Code_python) ,la sintaxis de ejecución y el orden especifico es el siguiente.
 
-Ejemplo para la imagen TRAIN01.jpg: 
+Ejemplo para la imagen TRAIN01.jpg, ubicada en el directorio [0-origen](https://github.com/IaManBel/pim/tree/main/0-origen), ejecutar:
 
-##1. ## python3  grayscale.py TRAIN01.jpg gTRAIN01.jpg 
-##2. ## python3  median.py gTRAIN01.jpg medi1gTRAIN01.jpg 1  
-##3. ## python3  Gaus2.py medi1gTRAIN01.jpg Gausmedi1gTRAIN01.jpg    
-##4. ## python3  mean.py Gausmedi1gTRAIN01.jpg mean2Gausmedi1gTRAIN01.jpg 2  
-##5. ## python3  Ccurv.py mean2Gausmedi1gTRAIN01.jpg Ccur12mean2Gausmedi1gTRAIN01.jpg 1 2  
-##6. ## python3  KrnelMax.py Ccur12mean2Gausmedi1gTRAIN01.jpg KrneCcur12mean2Gausmedi1gTRAIN01.jpg   
+## 1. python3  grayscale.py TRAIN01.jpg gTRAIN01.jpg 
+## 2. python3  median.py gTRAIN01.jpg medi1gTRAIN01.jpg 1  
+## 3. python3  Gaus2.py medi1gTRAIN01.jpg Gausmedi1gTRAIN01.jpg    
+## 4. python3  mean.py Gausmedi1gTRAIN01.jpg mean2Gausmedi1gTRAIN01.jpg 2  
+## 5. python3  Ccurv.py mean2Gausmedi1gTRAIN01.jpg Ccur12mean2Gausmedi1gTRAIN01.jpg 1 2  
+## 6. python3  KrnelMax.py Ccur12mean2Gausmedi1gTRAIN01.jpg KrneCcur12mean2Gausmedi1gTRAIN01.jpg   
 
 # Resultados
 Los resultados obtenidos en cada uno de los 30 casos se encuentran en el directorio [6-Kernel](https://github.com/IaManBel/pim/tree/main/6-Kernel), los cuales se observan como esta imagen:
