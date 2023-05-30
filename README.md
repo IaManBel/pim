@@ -62,7 +62,7 @@ Ejemplo para la imagen [TRAIN01.jpg](https://github.com/IaManBel/pim/tree/main/0
 ## Paso a paso a ejecutar en cada una de las imágenes del directorio [0-Origen](https://github.com/IaManBel/pim/tree/main/0-origen)
 #### Paso 1: python3  [grayscale.py](https://github.com/IaManBel/pim/tree/main/Code_python/grayscale.py) TRAIN01.jpg gTRAIN01.jpg 
 #### Paso 2: python3  [median.py](https://github.com/IaManBel/pim/tree/main/Code_python/median.py) gTRAIN01.jpg medi1gTRAIN01.jpg 1  
-#### Paso 3: python3  [Gaus2.py](https://github.com/IaManBel/pim/tree/main/Code_python/Gaues2.py) medi1gTRAIN01.jpg Gausmedi1gTRAIN01.jpg    
+#### Paso 3: python3  [Gaus2.py](https://github.com/IaManBel/pim/tree/main/Code_python/Gaus2.py) medi1gTRAIN01.jpg Gausmedi1gTRAIN01.jpg    
 #### Paso 4: python3  [mean.py](https://github.com/IaManBel/pim/tree/main/Code_python/mean.py) Gausmedi1gTRAIN01.jpg mean2Gausmedi1gTRAIN01.jpg 2  
 #### Paso 5: python3  [Ccurv.py](https://github.com/IaManBel/pim/tree/main/Code_python/CCurv.py) mean2Gausmedi1gTRAIN01.jpg Ccur12mean2Gausmedi1gTRAIN01.jpg 1 2  
 #### Paso 6: python3  [KrnelMax.py](https://github.com/IaManBel/pim/tree/main/Code_python/KrnelMax.py) Ccur12mean2Gausmedi1gTRAIN01.jpg KrneCcur12mean2Gausmedi1gTRAIN01.jpg   
