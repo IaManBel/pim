@@ -1,6 +1,6 @@
 # pim
-# Repositorio proyecto final PIM Univerisdad Javeriana 2023-10
-### Manuel Beltran - Jesus Súarez
+# Repositorio proyecto final PIM Universidad Javeriana 2023-10
+### Manuel Beltrán - Jesus Suarez
 
 # Análisis de Imágenes Médicas - Segmentación de Características en Imágenes de Fondo de Ojo
 
@@ -22,7 +22,7 @@ Dentro de las conclusiones a priori que se puede obtener del desarrollo del pres
 
 1.	Dadas las características ya expuestas de las imágenes, en primer lugar, convertimos las imágenes a escala de grises, en búsqueda de simplicidad y reducción de esfuerzo de cómputo, así como una reducción en la dimensionalidad, para el tratamiento de estas.
 
-2.	Dentro del pipeline el siguiente ajuste está enfocado a la reducción del ruido, por medio de la aplicación de un    filtro de mediana, eliminando los outliers (pixeles que exceden por mucho el valor de la media, para este filtro se utilizó el parámetro r=1!.
+2.	Dentro del pipeline el siguiente ajuste está enfocado a la reducción del ruido, por medio de la aplicación de un    filtro de mediana, eliminando los outliers (pixeles que exceden por mucho el valor de la media, para este filtro se utilizó el parámetro r=1.
 
 3.	Con el objetivo de preservar los bordes, de las estructuras que queremos destacar, dentro del pipeline se hace uso de un filtro gausiano, el cual de acuerdo con las especificaciones facilita trabajar la imagen para resaltar las venas y el circulo óptico. Con este acercamiento logramos observar claramente las estructuras existentes en dentro del círculo óptico, las cuales representan en general dificultad por su particular luminosidad, y las que hasta el momento para nosotros con el uso de otros pipelines habían sido difícilmente identificables.
 
@@ -34,20 +34,13 @@ Dentro de las conclusiones a priori que se puede obtener del desarrollo del pres
 
 # Descripción de los directorios.
 Los directorios se encuentran enumerados, este digito corresponde a la etapa, de  la que hace parte cada grupo de imágenes, a continuación una breve descripción del contenido:
-#### 0-Origen, el repositorio contiene  las imagenes fuente del proceso, es decir las que son tomadas como base y proporcionadas por el reto kaggle.
-#### 1-GrayScale, contiene las imagenes posterior a la aplicación de filtro grayscale, sobre las imagenes del directorio 0.
-#### 2-Median, este directorio y los subsiguientes, contienen las imagenes resultantes de aplicar el filtro correspondiente, a cada una de las imagenes del paso inmediatamente interior.
-#### 6-Kernel, Este directorio contiene las imágenes resultantes de aplicar el pipeline, en el orden descito en:
+#### [0-Origen](https://github.com/IaManBel/pim/tree/main/0-origen), el repositorio contiene  las imagenes fuente del proceso, es decir las que son tomadas como base y proporcionadas por el reto kaggle.
+#### [1-GrayScale](https://github.com/IaManBel/pim/tree/main/1-GrayScale), contiene las imagenes posterior a la aplicación de filtro grayscale, sobre las imágenes del directorio 0.
+#### [2-Median](https://github.com/IaManBel/pim/tree/main/2-Median), este directorio contienen las imágenes resultantes de aplicar el filtro correspondiente Median.py con parámetro r=1 , a cada una de las imágenes del paso inmediatamente interior.
+#### [3-Gausian](https://github.com/IaManBel/pim/tree/main/3-Median), este directorio y los subsiguientes, contienen las imágenes resultantes de aplicar el filtro correspondiente, a cada una de las imágenes del paso inmediatamente interior.
+#### [4-Mean](https://github.com/IaManBel/pim/tree/main/4-Mean), este directorio y los subsiguientes, contienen las imágenes resultantes de aplicar el filtro correspondiente, a cada una de las imágenes del paso inmediatamente interior.
+![image](https://github.com/IaManBel/pim/assets/124216691/c619f9aa-16ed-468d-a629-04406bc9ae53)
 
-<img width="284" alt="pipeline" src="https://github.com/IaManBel/pim/assets/124216691/aa955d5b-6f92-44eb-b8f0-11da5e2c66c4">
-
-Nota es de particular interes aclarar que este es un proceso secuencial, en el que cada fase del pipeline, proporciona la imagen de entrada para el siguiente paso.
-
-# Ejecución 
-
-Los programas utilizados para el desarrollo del proyecto se encuentran en este repositorio en el directorio [Code_python](https://github.com/IaManBel/pim/tree/main/Code_python) ,la sintaxis de ejecución y el orden especifico es el siguiente.
-
-Ejemplo para la imagen TRAIN01.jpg, ubicada en el directorio [0-origen](https://github.com/IaManBel/pim/tree/main/0-origen), ejecutar:
 
 ## 1. python3  grayscale.py TRAIN01.jpg gTRAIN01.jpg 
 ## 2. python3  median.py gTRAIN01.jpg medi1gTRAIN01.jpg 1  
