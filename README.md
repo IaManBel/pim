@@ -20,33 +20,34 @@ Dentro de las conclusiones a priori que se puede obtener del desarrollo del pres
 
 # Detalle, justificación del paso a paso empleado en el pipeline.
 
-1.	Dadas las características ya expuestas de las imágenes, en primer lugar, convertimos las imágenes a escala de grises, en búsqueda de simplicidad y reducción de esfuerzo de cómputo, así como una reducción en la dimensionalidad, para el tratamiento de estas.
+Paso 1:	Dadas las características ya expuestas de las imágenes, en primer lugar, convertimos las imágenes a escala de grises, en búsqueda de simplicidad y reducción de esfuerzo de cómputo, así como una reducción en la dimensionalidad, para el tratamiento de estas.
 
-2.	Dentro del pipeline el siguiente ajuste está enfocado a la reducción del ruido, por medio de la aplicación de un    filtro de mediana, eliminando los outliers (pixeles que exceden por mucho el valor de la media, para este filtro se utilizó el parámetro r=1.
+Paso 2:	Dentro del pipeline el siguiente ajuste está enfocado a la reducción del ruido, por medio de la aplicación de un  filtro de mediana, eliminando los outliers (pixeles que exceden por mucho el valor de la media, para este filtro se utilizó el parámetro r=1.
 
-3.	Con el objetivo de preservar los bordes, de las estructuras que queremos destacar, dentro del pipeline se hace uso de un filtro gausiano, el cual de acuerdo con las especificaciones facilita trabajar la imagen para resaltar las venas y el circulo óptico. Con este acercamiento logramos observar claramente las estructuras existentes en dentro del círculo óptico, las cuales representan en general dificultad por su particular luminosidad, y las que hasta el momento para nosotros con el uso de otros pipelines habían sido difícilmente identificables.
+Paso 3:	Con el objetivo de preservar los bordes, de las estructuras que queremos destacar, dentro del pipeline se hace uso de un filtro gausiano, el cual de acuerdo con las especificaciones facilita trabajar la imagen para resaltar las venas y el circulo óptico. Con este acercamiento logramos observar claramente las estructuras existentes en dentro del círculo óptico, las cuales representan en general dificultad por su particular luminosidad, y las que hasta el momento para nosotros con el uso de otros pipelines habían sido difícilmente identificables.
 
-4.	Dentro del pipeline hacemos uso del filtro mean buscando reducir el ruido en la imagen (variaciones de alta frecuencia) para el desarrollo del ejercicio se utilizó el valor de r = 2, con el objetivo específico de conservar y resaltar las áreas de especifico interés (Roi).
+Paso 4: Dentro del pipeline hacemos uso del filtro mean buscando reducir el ruido en la imagen (variaciones de alta frecuencia) para el desarrollo del ejercicio se utilizó el valor de r = 2, con el objetivo específico de conservar y resaltar las áreas de especifico interés (Roi).
 
-5.	Para este caso específico en donde nos enfrentamos geométricamente a una esfera (globo ocular), envuelta por entidades cilíndricas (cavidades venosas), hacemos uso del filtro de difusión basado en curvatura, buscando aprovechar a ventaja que ofrece el registro del cambio de gradiente. Como parte de la generalización del proceso para tratar las 30 imágenes, se definieron los parámetros Iteraciones = 1 y unidades de tiempo = 2, ya que como combinatoria nos presentó un mejor resultado de cara al resultado esperado.
+Paso 5:	Para este caso específico en donde nos enfrentamos geométricamente a una esfera (globo ocular), envuelta por entidades cilíndricas (cavidades venosas), hacemos uso del filtro de difusión basado en curvatura, buscando aprovechar a ventaja que ofrece el registro del cambio de gradiente. Como parte de la generalización del proceso para tratar las 30 imágenes, se definieron los parámetros Iteraciones = 1 y unidades de tiempo = 2, ya que como combinatoria nos presentó un mejor resultado de cara al resultado esperado.
 
-6.	Por último, en el pipeline, se aplica un kernel de dimensión 3 x 3, asignando el valor máximo a cada pixel, buscando mejorar la representación de la imagen como resultado final.
+Paso 6: Por último, en el pipeline, se aplica un kernel de dimensión 3 x 3, asignando el valor máximo a cada pixel, buscando mejorar la representación de la imagen como resultado final.
 
 # Descripción de los directorios.
 Los directorios se encuentran enumerados, este digito corresponde a la etapa, de  la que hace parte cada grupo de imágenes, a continuación una breve descripción del contenido:
+
 #### [0-Origen](https://github.com/IaManBel/pim/tree/main/0-origen), el repositorio contiene  las imagenes fuente del proceso, es decir las que son tomadas como base y proporcionadas por el reto kaggle.
 
-#### [1-GrayScale](https://github.com/IaManBel/pim/tree/main/1-GrayScale), contiene las imagenes posterior a la aplicación de filtro grayscale, sobre las imágenes del directorio 0.
+#### [1-GrayScale](https://github.com/IaManBel/pim/tree/main/1-GrayScale), contiene las imagenes posterior a la aplicación de filtro grayscale, sobre las imágenes del directorio [0-Origen](https://github.com/IaManBel/pim/tree/main/0-origen).
 
-#### [2-Median](https://github.com/IaManBel/pim/tree/main/2-Median), este directorio contienen las imágenes resultantes de aplicar el filtro correspondiente Median.py con parámetro r=1 , a cada una de las imágenes obtenidasdel paso inmediatamente anterior.
+#### [2-Median](https://github.com/IaManBel/pim/tree/main/2-Median), este directorio contienen las imágenes resultantes de aplicar el filtro correspondiente Median.py con parámetro r=1 , a cada una de las imágenes obtenidasdel paso inmediatamente anterior almacenadas en [1-GrayScale](https://github.com/IaManBel/pim/tree/main/1-GrayScale).
 
-#### [3-Gausian](https://github.com/IaManBel/pim/tree/main/3-Median), este directorio contienen las imágenes resultantes de aplicar el filtro correspondiente Gaus2.py, a cada una de las imágenes obtenidas del paso inmediatamente interior.
+#### [3-Gausian](https://github.com/IaManBel/pim/tree/main/3-Gausian), este directorio contienen las imágenes resultantes de aplicar el filtro correspondiente Gaus2.py, a cada una de las imágenes obtenidas del paso inmediatamente anterior y almacenadas en [2-Median](https://github.com/IaManBel/pim/tree/main/2-Median).
 
-#### [4-Mean](https://github.com/IaManBel/pim/tree/main/4-Mean), este directorio y los subsiguientes, contienen las imágenes resultantes de aplicar el filtro Mean.py con un valor de r=2 a cada una de las imágenes obtenidas del paso inmediatamente interior.
+#### [4-Mean](https://github.com/IaManBel/pim/tree/main/4-Mean), este directorio y los subsiguientes, contienen las imágenes resultantes de aplicar el filtro Mean.py con un valor de r=2 a cada una de las imágenes obtenidas del paso inmediatamente interior y almacenadas en [3-Gausian](https://github.com/IaManBel/pim/tree/main/3-Gausian)
 
-#### [5-Ccurv](https://github.com/IaManBel/pim/tree/main/5-Ccurv), este directorio  contiene las imágenes resultantes de aplicar el filtro Ccurv.py, con los parametros itraciones=1, time=2, a cada una de las imágenes obtenidas del paso inmediatamente interior.
+#### [5-Ccurv](https://github.com/IaManBel/pim/tree/main/5-Ccurv), este directorio  contiene las imágenes resultantes de aplicar el filtro Ccurv.py, con los parametros itraciones=1, time=2, a cada una de las imágenes obtenidas del paso inmediatamente interior y almacenadas en [3-Gausian](https://github.com/IaManBel/pim/tree/main/3-Gausian).
 
-#### [6-Kernel](https://github.com/IaManBel/pim/tree/main/6-Kernel), este directorio, contiene las imágenes resultantes de aplicar el filtro KrnelMax.py, a cada una de las imágenes obtenidas del paso inmediatamente interior. Estas imagenes son las resultantes del pipeline propuesto.
+#### [6-Kernel](https://github.com/IaManBel/pim/tree/main/6-Kernel), este directorio, contiene las imágenes resultantes de aplicar el filtro KrnelMax.py, a cada una de las imágenes obtenidas del paso inmediatamente interior almacenadas en [5-Ccurv](https://github.com/IaManBel/pim/tree/main/5-Ccurv). Estas imagenes son las resultantes del pipeline propuesto.
 
 
 
