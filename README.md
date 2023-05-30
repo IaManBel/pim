@@ -48,7 +48,7 @@ Los directorios se encuentran enumerados, este digito corresponde a la etapa, de
 
 #### [6-Kernel](https://github.com/IaManBel/pim/tree/main/6-Kernel), este directorio, contiene las imágenes resultantes de aplicar el filtro KrnelMax.py, a cada una de las imágenes obtenidas del paso inmediatamente interior. Estas imagenes son las resultantes del pipeline propuesto.
 
-![image](https://github.com/IaManBel/pim/assets/124216691/c619f9aa-16ed-468d-a629-04406bc9ae53)
+
 
 Ejemplo para la imagen [TRAIN01.jpg](https://github.com/IaManBel/pim/tree/main/0-origen/TRAIN01.jpg), ubicada en el directorio [0-origen](https://github.com/IaManBel/pim/tree/main/0-origen), ejecutar: python3 [grayscale.py](https://github.com/IaManBel/pim/tree/main/Code_python/grayscale.py) [TRAIN01.jpg](https://github.com/IaManBel/pim/tree/main/0-origen/TRAIN01.jpg) [gTRAIN01.jpg](https://github.com/IaManBel/pim/tree/main/1-Grayscale/gTRAIN01.jpg)
 
