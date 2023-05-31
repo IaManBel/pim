@@ -60,7 +60,7 @@ Los directorios se encuentran enumerados, este digito corresponde a la etapa, de
 ## EJECUCIÓN OPCIÓN 1 (PIPELINE COMPLETO)
 El ejecutable [Pipeline.py](https://github.com/IaManBel/pim/tree/main/Code_python/Pipeline.py), posee todas las modificaciones a realizar a la imagen con los parámetros definidos para la obtención de los resultados presentados en la sustentación.
 
-## python3 [Pipeline.py](https://github.com/IaManBel/pim/tree/main/Code_python/Pipeline.py) [TRAIN01.jpg](https://github.com/IaManBel/pim/tree/main/0-origen/TRAIN01.jpg) [Salida.jpg](https://github.com/IaManBel/pim/tree/main/6-Kernel/KrnCcur12mean2Gausmedi1gTRAIN01)
+## python3 [Pipeline.py](https://github.com/IaManBel/pim/tree/main/Code_python/Pipeline.py) [TRAIN01.jpg](https://github.com/IaManBel/pim/tree/main/0-origen/TRAIN01.jpg) [Salida.jpg](https://github.com/IaManBel/pim/tree/main/6-Kernel/KrnCcur12mean2Gausmedi1gTRAIN01.jpg)
 
 ## EJECUCIÓN OPCION 2 (PASO A PASO DEL PIPELINE)
 
