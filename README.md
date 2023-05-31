@@ -58,6 +58,10 @@ Los directorios se encuentran enumerados, este digito corresponde a la etapa, de
 
 
 Ejemplo para la imagen [TRAIN01.jpg](https://github.com/IaManBel/pim/tree/main/0-origen/TRAIN01.jpg), ubicada en el directorio [0-origen](https://github.com/IaManBel/pim/tree/main/0-origen), ejecutar: python3 [grayscale.py](https://github.com/IaManBel/pim/tree/main/Code_python/grayscale.py) [TRAIN01.jpg](https://github.com/IaManBel/pim/tree/main/0-origen/TRAIN01.jpg) [gTRAIN01.jpg](https://github.com/IaManBel/pim/tree/main/1-Grayscale/gTRAIN01.jpg)
+# EJECUCIÓN
+El ejecutable Pipeline.py, posee todas las modificaciones a realizar a la imagen con los parámetros definidos para la obtención de los resultados.
+
+## python3 Pipeline.py [TRAIN01.jpg](https://github.com/IaManBel/pim/tree/main/0-origen/TRAIN01.jpg) [Salida.jpg](https://github.com/IaManBel/pim/tree/main/6-Kernel/KrnCcur12mean2Gausmedi1gTRAIN01)
 
 ## Paso a paso a ejecutar en cada una de las imágenes del directorio [0-Origen](https://github.com/IaManBel/pim/tree/main/0-origen)
 #### Paso 1: python3  [grayscale.py](https://github.com/IaManBel/pim/tree/main/Code_python/grayscale.py) TRAIN01.jpg gTRAIN01.jpg 
