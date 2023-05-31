@@ -57,7 +57,7 @@ Los directorios se encuentran enumerados, este digito corresponde a la etapa, de
 #### [6-Kernel](https://github.com/IaManBel/pim/tree/main/6-Kernel): Este directorio, contiene las imágenes resultantes de aplicar el filtro KrnelMax.py, a cada una de las imágenes obtenidas del paso inmediatamente interior y almacenadas en [5-Ccurv](https://github.com/IaManBel/pim/tree/main/5-Ccurv). Estas imágenes son las resultantes del pipeline propuesto.
 
 
-# EJECUCIÓN OPCION 1 (PIPELINE COMPLETO)
+# EJECUCIÓN OPCIÓN 1 (PIPELINE COMPLETO)
 El ejecutable [Pipeline.py](https://github.com/IaManBel/pim/tree/main/Code_python/Pipeline.py), posee todas las modificaciones a realizar a la imagen con los parámetros definidos para la obtención de los resultados presentados en la sustentación.
 
 ## python3 [Pipeline.py](https://github.com/IaManBel/pim/tree/main/Code_python/Pipeline.py) [TRAIN01.jpg](https://github.com/IaManBel/pim/tree/main/0-origen/TRAIN01.jpg) [Salida.jpg](https://github.com/IaManBel/pim/tree/main/6-Kernel/KrnCcur12mean2Gausmedi1gTRAIN01)
